@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Requisito 1 – página HTML em português (lang="pt-BR") linkada a um CSS e a um script.js externos -->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefa 4 – Formulário com validação</title>
+
+    <!-- Requisito 5 – estilização feita em arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="pagina">
+      <!-- Requisito 5 – cartão centralizado que contém o formulário e o div de sucesso -->
+      <section class="cartao">
+        <h1 class="titulo">Cadastro</h1>
+        <p class="subtitulo">Preencha os dados abaixo para continuar.</p>
+
+        <!-- Requisito 2 – formulário com os campos Nome, E-mail e CPF -->
+        <!-- Requisito 3 – sem validação no HTML (sem required, pattern ou type="email"); tudo é validado pelo script.js -->
+        <form id="formulario">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" />
+            <!-- Requisito 3 – <span> logo abaixo do input para a mensagem de erro -->
+            <span class="mensagem-erro" id="erro-nome" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="nome@exemplo.com" autocomplete="email" />
+            <!-- Requisito 3 – <span> logo abaixo do input para a mensagem de erro -->
+            <span class="mensagem-erro" id="erro-email" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" autocomplete="off" />
+            <!-- Requisito 3 – <span> logo abaixo do input para a mensagem de erro -->
+            <span class="mensagem-erro" id="erro-cpf" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="botao">Enviar</button>
+        </form>
+
+        <!-- Requisito 3 – <div> sobreposto ao formulário com a mensagem de sucesso (começa oculto) -->
+        <div id="sucesso" class="sucesso oculto">
+          <h2>Cadastro enviado!</h2>
+          <p id="texto-sucesso"></p>
+          <button type="button" class="botao botao-claro" id="botao-fechar">Novo cadastro</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Requisito 1 – script externo carregado no final do body, depois dos elementos que ele usa -->
+    <script src="script.js"></script>
+  </body>
+</html>
