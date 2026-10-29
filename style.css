@@ -6,7 +6,7 @@
   --cor-texto: #1f2d28;
   --cor-borda: #b8c9c2;
   --cor-erro: #e02424;
-  --raio: 12px;
+  --raio: 10px;
 }
 
 /* Requisito 5 – box-sizing global: padding e borda ficam dentro da largura definida */
