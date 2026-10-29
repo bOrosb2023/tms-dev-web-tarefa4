@@ -1,9 +1,9 @@
 /* Requisito 5 – variáveis CSS para manter as cores e medidas em um só lugar */
 :root {
-  --cor-principal: #0b7a5b;
-  --cor-principal-escura: #07583f;
+  --cor-principal: #800866;
+  --cor-principal-escura: #e635e6;
   --cor-fundo: #e9f3ef;
-  --cor-texto: #1f2d28;
+  --cor-texto: #3821b6;
   --cor-borda: #b8c9c2;
   --cor-erro: #e02424;
   --raio: 12px;
